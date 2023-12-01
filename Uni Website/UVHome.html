@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>University of Vancouver</title>
+
+<style>
+
+body {
+		background-color: #FFFF;
+	 	max-width: 100%;
+	 	overflow-x: hidden;
+	 	margin: 0;
+	}
+
+div.heading {
+		background-color: #9F0000;
+		margin-top: -20px;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		height: 75px;
+	}
+
+div.circle {
+		background: #9F0000;
+		border-radius: 50%;
+		width: 125px;
+		height: 125px;
+		position: absolute;
+		top: 15px;
+		left: 610px;
+}
+
+div.headingtext {
+		color: #EBA319;
+		font-family: 'Garamond', serif;
+		font-weight: bold;
+		font-size: 25px;
+		float: left;
+		position: absolute;
+		top: -12px;
+		left: 20px;
+}
+
+div.graduatingtext {
+		color: #EBA319;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: bold;
+		font-size: 45px;
+		float: left;
+		position: absolute;
+		top: 160px;
+		left: 200px;
+		opacity: 1;
+}
+
+div.graduatingbox {
+		background-color: #9F0000;
+		float: left;
+		position: absolute;
+		top: 180px;
+		left: 140px;
+		width: 1100px;
+		height: 200px;
+		opacity: .5;
+}
+
+div.middledivider {
+		background-color: #9F0000;
+		position: absolute;
+		top: 460px;
+		left: 0px;
+		width: 100%;
+		height: 45px;
+}
+
+div.middledividerii {
+		background-color: #9F0000;
+		position: absolute;
+		top: 1100px;
+		left: 0px;
+		width: 100%;
+		height: 45px;
+}
+
+div.campusoverlay {
+		background-color: #9F0000;
+		position: absolute;
+		top: 1145px;
+		left: 0px;
+		width: 100%;
+		height: 600px;
+		opacity: .65;
+}
+
+div.infotext {
+		color: #EBA319;
+		font-family: 'Garamond', serif;
+		font-weight: bold;
+		font-size: 30px;
+		float: left;
+		position: absolute;
+		top: 1425px;
+		left: 50px;
+		right: 600px;
+}
+
+div.infotitle {
+		color: #EBA319;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+		float: left;
+		position: absolute;
+		top: 1200px;
+		left: 50px;
+		right: 600px;
+}
+
+div.bottomsection {
+		background-color: #9F0000;
+		position: absolute;
+		top: 1745px;
+		left: 0px;
+		width: 100%;
+		height: 400px;
+}
+
+div.bottomtriangle {
+		position: absolute;
+		top: 1650px;
+		left: 1000px;
+		width: 0;
+		height: 0;
+		border-left: 75px solid transparent;
+		border-right: 75px solid transparent;
+		border-bottom: 100px solid #9F0000;
+}
+
+div.admissionstitle {
+		color: #EBA319;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+		position: absolute;
+		top: 1750px;
+		left: 50px;
+}
+
+div.supporttitle {
+		color: #EBA319;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+		position: absolute;
+		top: 1750px;
+		left: 450px;
+}
+
+div.admissionslinks {
+		color: #EBA319;
+		font-family: 'Garamond', serif;
+		font-size: 24px;
+		float: left;
+		position: absolute;
+		top: 1850px;
+		left: 50px;
+}
+
+div.supportlinks {
+		color: #EBA319;
+		font-family: 'Garamond', serif;
+		font-size: 24px;
+		float: left;
+		position: absolute;
+		top: 1850px;
+		left: 450px;
+}
+
+div.followustitle {
+		color: #EBA319;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+		position: absolute;
+		top: 1750px;
+		left: 1075px;
+}
+
+img.graduatingstudents {
+		width: 100%;
+		height: 405px;
+}
+
+img.middlesection {
+		width: 100%;
+		height: 600px;
+		position: absolute;
+		left: 0px;
+		top: 505px;
+}
+
+img.campus {
+		width: 100%;
+		height: 600px;
+		position: absolute;
+		left: 0px;
+		top: 1145px;
+}
+
+img.textlogo {
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		left: 825px;
+		top: 1250px;
+}
+
+img.headinglogo {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		left: 598px;
+		top: 3px;
+}
+
+img.instagram {
+	width: 135px;
+	height: 75px;
+	position: absolute;
+	left: 1175px;
+	top: 1875px;
+}
+
+img.facebook {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 1205px;
+	top: 1975px;
+}
+
+img.menubutton {
+
+}
+
+.dropdownbutton {
+	position: absolute;
+	top: -38px;
+	left: 30px;
+  	cursor: pointer;
+}
+
+.dropdownbutton img {
+	width: 40px;
+	height: auto;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  left: 1225px;
+  top: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EBA319;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #9F0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Garamond', serif;
+  font-wight: bold;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+a {
+	color: #EBA319;
+	font-family: 'Garamond', serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="circle"></div>
+	<div class="heading">
+		<div class="headingtext">
+			<p>University of Vancouver</p>
+		</div>
+	</div>
+
+	<img src="logo.png" class="headinglogo">
+
+	<div class="dropdown">
+		<div class="dropdownbutton">
+ 			<img src="menubutton.png" alt="Menu Button">
+ 		</div>
+  		<div class="dropdown-content">
+    		<a href="uvhome.html">Home</a>
+    		<a href="uvfaculty.html">Faculty</a>
+    		<a href="uvconstruction.html">News</a>
+  		</div>
+	</div>
+
+	<div class="graduatingbox"></div>
+	<div class="graduatingtext">
+			<h1>YOU BELONG HERE.</h1>
+	</div>
+
+	<img src="graduatingstudents.jpeg" class="graduatingstudents">
+
+	<div class="middledivider"></div>
+
+	<img src="middlesection.png" class="middlesection">
+
+	<div class="middledividerii"></div>
+
+	<img src="campus.jpg" class="campus">
+	<div class="campusoverlay"></div>
+
+	<div class="infotitle">
+		<h1>SEE WHAT WE HAVE TO OFFER</h1>
+	</div>
+
+	<div class="infotext">
+		<p>For over 50 years, the University of Vancouver has proven to represent the pinnacle of post secondary choices in North America. Making the top 20 list of universities worldwide year after year, we strive to provide the upmost of quality within our education.</p>
+	</div>
+
+	<img src="logo.png" class="textlogo">
+
+	<div class="bottomsection"></div>
+	<div class="bottomtriangle"></div>
+
+	<div class="admissionstitle">
+		<h2>ADMISSIONS</h2>
+	</div>
+
+	<div class="supporttitle">
+		<h2>SUPPORT</h2>
+	</div>
+
+	<div class="admissionslinks">
+		<p><a href="uvconstruction.html">Prospective Students</a></p>
+		<p><a href="uvconstruction.html">Programs</a></p>
+		<p><a href="uvconstruction.html">Graduate Students</a></p>
+		<p><a href="uvconstruction.html">Tuition and Fees</a></p>
+	</div>
+
+	<div class="supportlinks">
+		<p><a href="uvconstruction.html">Services</a></p>
+		<p><a href="uvconstruction.html">FAQs</a></p>
+		<p><a href="uvconstruction.html">Advising</a></p>
+	</div>
+
+	<div class="followustitle">
+		<h2>FOLLOW US</h2>
+	</div>
+
+	<a href="https://www.instagram.com/cl.a.lo/">
+		<img src="instagram.png" class="instagram">
+	</a>
+
+	<a href="https://www.facebook.com/claire.lo.33821/">
+		<img src="facebook.png" class="facebook">
+	</a>
+
+</body>
+
+</html>
